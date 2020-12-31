@@ -1,0 +1,116 @@
+/* -------- CSS général -------- */
+
+header,
+section {
+    margin: 0%;
+}
+
+
+/* -------- HEADER -------- */
+
+.mainHeader {
+    margin: 2%;
+}
+
+.mainHeaderLogoDesktop {
+    display: none;
+    image-rendering: optimizeQuality;
+}
+
+.mainHeaderNav {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.mainHeaderLogoSmartphone {
+    display: flex;
+    justify-content: left;
+    width: 50%;
+    align-items: center;
+}
+
+.mainHeaderLogoSmartphone>img {
+    width: 60%;
+    image-rendering: optimizeQuality;
+}
+
+.register {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    width: 50%;
+    font-size: 25px;
+    font-size: 3.5vw;
+}
+
+.accomodation {
+    padding-top: 5%;
+    text-align: center;
+    color: #0065FC;
+    width: 50%;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.activities {
+    padding-top: 5%;
+    text-align: center;
+    width: 50%;
+    align-items: center;
+    font-size: 5vw;
+}
+
+.mainHeader>.mainHeaderNav>.mainHeaderLogoSmartphone {
+    order: 1;
+}
+
+.mainHeader>.mainHeaderNav>.accomodation {
+    order: 3;
+}
+
+.mainHeader>.mainHeaderNav>.activities {
+    order: 4;
+}
+
+.mainHeader>.mainHeaderNav>.register {
+    order: 2;
+}
+
+.headerDescription {
+    width: 80%;
+    margin: 4%;
+    padding-top: 1%;
+}
+
+.headerDescription>h3 {
+    font-size: 6vw;
+}
+
+.headerDescription>h4 {
+    font-size: 4vw;
+}
+
+.button1 {
+    display: flex;
+    margin-top: 10%;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.searchButton {
+    font-size: 5vw;
+    border-radius: 15px;
+}
+
+
+/* -------- FOOTER -------- */
+
+.footerContainers {
+    flex-direction: column;
+}
+
+.footerLists>ol {
+    padding-left: 0px;
+}
