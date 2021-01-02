@@ -24,105 +24,113 @@
 @font-face {
     font-family: 'ralewayLight';
     src: url('../ressources/fonts/Raleway-Light.ttf') format("truetype");
-    font-weight: ;
-    font-style: ;
+    font-weight: lighter;
+    font-style: normal;
 }
 
 
 /* -------- GENERAL -------- */
 
 body {
+    top: 0;
+    bottom: 0;
     font-family: 'raleway';
-    background-color: white;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-    font-size: 1vw;
+    background-color: transparent;
+    width: auto;
+    font-size: 1em;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 10px;
 }
 
-header,
-section {
-    margin: 2%;
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+    z-index: 2;
 }
 
 li {
     list-style-type: none;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: none;
-    cursor: pointer;
-}
-
 .fa {
     color: #0065FC;
 }
 
-.SearchSections {
-    width: 96%;
+.mainPage {
+    display: block;
+}
+
+.searchSections {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+    width: auto;
+    padding-bottom: 50px;
+}
+
+.searchSections a,
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.searchSection1 {
+    width: 70%;
+}
+
+.searchSection2 {
+    width: 25%;
 }
 
 
 /* -------- HEADER -------- */
 
 .mainHeader {
+    top: 0;
+    position: fixed;
     display: flex;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    z-index: 1;
 }
 
-.mainHeaderNav {
-    position: sticky;
-    width: 50%;
+.headerNav {
+    position: fixed;
+    top: 0;
     display: flex;
-    justify-content: end;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    justify-content: right;
+    width: 100%;
 }
 
-.mainHeaderNav a:active {
-    border-top: 2px solid #0065FC;
-    margin: 0px;
-    padding: 0px;
+.logo {
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 20px;
 }
 
-.mainHeaderLogoDesktop {
-    width: 50%;
-    display: flex;
-    justify-content: start;
-}
-
-.mainHeaderLogoDesktop>img {
-    width: 15%;
-    image-rendering: optimizeQuality;
+nav a {
+    text-decoration: none;
     cursor: pointer;
-}
-
-.mainHeaderLogoSmartphone {
-    display: none;
-}
-
-.accomodation {
     color: #0065FC;
-    padding-right: 4%;
+    padding-top: 35px;
+    margin-top: 0px;
+    border-top: 3px solid white;
+    justify-content: space-arround;
+    margin-right: 50px;
 }
 
 .activities {
     color: gray;
-    padding-right: 4%;
 }
 
-.register {
-    font-family: "ralewayBold";
-    color: #0065FC;
-    padding-right: 4%;
+.headerDescription {
+    padding-top: 60px;
 }
 
+.register,
 .headerDescription>h3 {
     font-family: "ralewayBold";
 }
@@ -131,11 +139,15 @@ a:hover {
     font-family: "ralewayLight";
 }
 
+nav a:hover,
+nav a:active {
+    border-top: 3px solid #0065FC;
+}
+
 
 /* -------- SEARCH BUTTON -------- */
 
 .searchButton {
-    margin: 2%;
     display: flex;
     justify-content: left;
     width: 100%;
@@ -143,15 +155,15 @@ a:hover {
 }
 
 .searchField {
-    background: white;
+    background: transparent;
     border-color: #F2F2F2;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     color: black;
-    margin-right: 0%;
+    margin-right: 0px;
+    margin-left: 0px;
     text-align: left;
-    font-size: 8px;
-    height: 18px;
+    height: 40px;
 }
 
 ::placeholder {
@@ -166,8 +178,7 @@ a:hover {
     position: relative;
     border-radius: 0px 5px 5px 0px;
     text-align: center;
-    font-size: 8px;
-    height: 18px;
+    height: 40px;
     cursor: pointer;
 }
 
@@ -178,28 +189,25 @@ a:hover {
     position: relative;
     border-radius: 5px 0px 0px 5px;
     text-align: center;
-    font-size: 8px;
-    height: 18px;
+    height: 40px;
 }
 
 i.fa.fa-map-marker {
     color: black;
     text-align: center;
-    font-size: 10px;
 }
 
 
 /* -------- FILTERS -------- */
 
-.filters {
-    width: 60%;
+.filtersInfo {
     display: flex;
     flex-wrap: nowrap;
 }
 
-.filters>p {
-    margin-right: 2%;
-    border-radius: 50%;
+.filtersInfo>p {
+    margin-right: 20px;
+    padding-bottom: 20px;
 }
 
 
@@ -207,14 +215,15 @@ i.fa.fa-map-marker {
 
 .accomodationsWeFound {
     background-color: #F2F2F2;
-    padding: 2%;
-    border-radius: 10px;
-    width: 80%;
     font-family: 'ralewayBold';
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .accomodationsWeFound h3 {
-    padding-left: 3%;
+    padding-left: 20px;
 }
 
 .accomodationsBlock {
@@ -225,12 +234,12 @@ i.fa.fa-map-marker {
 }
 
 .accomodationsContainers {
-    padding: 0.5%;
-    margin: 2%;
-    max-width: 26%;
-    background-color: white;
-    border: 1px solid white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 4px solid transparent;
     border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 15px 5px grey;
 }
 
 .accomodationsPhotos {
@@ -238,15 +247,15 @@ i.fa.fa-map-marker {
 }
 
 .accomodationsPhotos img {
-    max-width: 100%;
-    max-height: 100%;
-    background-position: center center;
-    background-size: cover;
+    height: 150px;
+    width: 320px;
     border-radius: 5px 5px 0px 0px;
+    object-fit: cover;
 }
 
 .accomodationDescription {
-    padding: 5%;
+    padding-left: 20px;
+    padding-bottom: 5px;
 }
 
 .accomodationDescription p:nth-child(2) {
@@ -256,66 +265,100 @@ i.fa.fa-map-marker {
 .stars1 i:nth-child(5),
 .stars3 i:nth-child(5),
 .stars4 i:nth-child(4),
-.stars4 i:nth-child(5) {
+.stars4 i:nth-child(5),
+.stars5 i:nth-child(5) {
     color: grey;
+}
+
+.seeMore {
+    margin-top: 20px;
+    padding-left: 20px
+}
+
+.seeMore>a:hover {
+    color: #0065FC;
 }
 
 
 /* ------ MOST POPULARS ------ */
 
-.populars {
+.popularsSection {
     background-color: #F2F2F2;
-    padding: 2%;
+    padding: 20px;
     border-radius: 10px;
-    width: 30%;
     font-family: 'ralewayBold';
 }
 
-.populars h3 {
-    padding-left: 3%;
+.popularsTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.popularsSection h3 {
+    display: inline-block;
+    padding-left: 20px;
 }
 
 .popularsBlock {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .popularsContainers {
-    padding: 0.5%;
-    margin: 2%;
-    max-width: 26%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 400px;
     background-color: white;
-    border: 1px solid white;
+    border: 4px solid transparent;
+    box-shadow: 0px 5px 15px 5px grey;
     border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-.popularsPhotos {}
-
 .popularsPhotos img {
-    max-width: 100%;
-    max-height: 100%;
-    background-position: center center;
-    background-size: cover;
-    border-radius: 5px 5px 0px 0px;
+    height: 160px;
+    width: 150px;
+    border-radius: 5px 0px 0px 5px;
+    object-fit: cover;
 }
 
 .popularsDescription {
-    padding: 5%;
+    padding: 20px;
 }
 
 .popularsDescription p:nth-child(2) {
     font-family: 'raleway';
 }
 
-.starsPop1 i:nth-child(5),
-.starsPop3 i:nth-child(5),
-.starsPop4 i:nth-child(4),
-.starsPop4 i:nth-child(5) {
+.starsPop2 i:nth-child(5),
+.starsPop3 i:nth-child(5) {
     color: grey;
+}
+
+
+/* ------ ACTIVITIES ------ */
+
+#activities {
+    background-color: #F2F2F2;
+    font-family: 'ralewayBold';
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.activitiesBlock {}
+
+.activitiesContainers {}
+
+.activities h3 {
+    padding-left: 20px;
 }
 
 
@@ -323,25 +366,25 @@ i.fa.fa-map-marker {
 
 footer {
     background-color: #f1f1f1;
-    border-radius: 0px;
-    margin: 0px;
+    width: auto;
     margin-left: 0px;
-    padding-top: 1%;
-    padding-left: 2%;
-    width: 100%;
-    bottom: 0;
-    width: 100%;
+    margin-right: 0px;
+    font-family: "ralewayLight";
+    font-size: 1rem;
 }
 
-footer>h5 {
+footer h5 {
     font-family: "ralewayBold";
+    font-size: 1rem;
 }
 
 .footerContainers {
     display: flex;
     flex-direction: row;
-    width: 65%;
+    width: 75%;
     justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
 }
 
 .footerLists {
@@ -356,6 +399,10 @@ footer>h5 {
 }
 
 .footerLists li {
-    font-family: "ralewayLight";
     padding-bottom: 5%;
+    cursor: pointer;
+}
+
+.footerLists li:hover {
+    text-decoration: underline;
 }
