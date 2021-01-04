@@ -49,6 +49,10 @@ main {
     z-index: 2;
 }
 
+h3 {
+    font-size: 1.2rem;
+}
+
 li {
     list-style-type: none;
 }
@@ -106,7 +110,6 @@ footer a {
 }
 
 .logo {
-    justify-content: left;
     padding-top: 20px;
     padding-left: 20px;
 }
@@ -293,6 +296,7 @@ i.fa.fa-map-marker {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 20px;
 }
 
 .popularsSection h3 {
@@ -346,19 +350,86 @@ i.fa.fa-map-marker {
 
 #activities {
     background-color: #F2F2F2;
-    font-family: 'ralewayBold';
     padding: 20px;
     border-radius: 10px;
-    display: flex;
-    flex-wrap: wrap;
+    font-size: 0.8rem;
 }
 
-.activitiesBlock {}
+#activities>h3 {
+    font-family: "ralewayBold";
+}
 
-.activitiesContainers {}
+.activitiesBlock {
+    display: inline-grid;
+    column-gap: 50px;
+    row-gap: 20px;
+    grid-template-columns: 400px;
+    grid-template-rows: 240px;
+}
 
-.activities h3 {
-    padding-left: 20px;
+.activitiesContainers {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.activitiesCtn1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.activitiesCtn2,
+.activitiesCtn3 {
+    grid-column: 2;
+}
+
+.activitiesCtn4 {
+    grid-column: 3;
+    grid-row: 1;
+}
+
+.activitiesCtn5,
+.activitiesCtn6 {
+    grid-column: 4;
+}
+
+.activitiesCtn2,
+.activitiesCtn4 {
+    grid-row: 1;
+}
+
+.activitiesCtn3,
+.activitiesCtn6 {
+    grid-row: 2;
+}
+
+.activitiesCtn1 img,
+.activitiesCtn4 img {
+    height: 460px;
+    width: 400px;
+}
+
+.activitiesCtn2 img,
+.activitiesCtn3 img,
+.activitiesCtn5 img,
+.activitiesCtn6 img {
+    height: 200px;
+    width: 400px;
+}
+
+.activitiesDescription {
+    background-color: white;
+    border-style: solid;
+    border-color: transparent;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.activitiesDescription p {
+    padding-left: 10px;
+}
+
+.activitiesPhotos img {
+    object-fit: cover;
+    border-radius: 5px 5px 0px 0px;
 }
 
 
@@ -399,7 +470,7 @@ footer h5 {
 }
 
 .footerLists li {
-    padding-bottom: 5%;
+    padding-bottom: 20px;
     cursor: pointer;
 }
 

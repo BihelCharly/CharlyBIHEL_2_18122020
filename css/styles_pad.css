@@ -1,0 +1,116 @@
+/* -------- GENERAL -------- */
+
+body {
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+}
+
+.mainPage {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.searchSections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.searchSection1,
+.searchSection2 {
+    width: 100%;
+}
+
+.searchSection1 {
+    order: 2;
+}
+
+.searchSection2 {
+    order: 1;
+    padding-bottom: 50px;
+}
+
+
+/* -------- HEADER -------- */
+
+.mainHeader,
+.headerNav {
+    position: inherit;
+    justify-content: inherit;
+}
+
+.mainHeader {
+    width: 100%;
+}
+
+.headerDescription,
+.filters {
+    width: 100%;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+
+/* -------- SEARCH BUTTON -------- */
+
+.searchButton {
+    justify-content: center;
+}
+
+
+/* ------ MOST POPULARS ------ */
+
+.popularsBlock {
+    width: 100%;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popularsTitle {
+    margin-right: 60px;
+    margin-left: 40px;
+}
+
+.popularsContainers {
+    width: 580px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.popularsContainers img {
+    width: 250px;
+    height: 200px;
+}
+
+
+/* -------- ACCOMODATIONS FOUND -------- */
+
+.accomodationsWeFound h3 {
+    margin-left: 40px;
+}
+
+.accomodationsContainers {
+    width: 580px;
+}
+
+.accomodationsContainers img {
+    width: 580px;
+    height: 230px;
+}
+
+
+/* -------- FOOTER -------- */
+
+.footerContainers {
+    flex-direction: column;
+    width: 100%;
+}
+
+.footerContainers li {
+    padding-bottom: 10px;
+}

@@ -3,10 +3,13 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS Desktop -->
     <link rel="stylesheet" type="text/css" href="../css/styles_desktop.css" />
+    <!-- CSS Pad  -->
+    <link rel="stylesheet" media="screen  and (min-device-width: 768px) and (max-device-width: 1024px)" type="text/css" href="../css/styles_pad.css" />
     <!-- CSS Smartphone  -->
-    <link rel="stylesheet" media="screen and (max-wclassth: 991.98px)" type="text/css" href="../css/styles_smartphone.css" />
+
     <!-- Title -->
     <title>Reservia - Trouvez votre hébergement pour des vacances de rêve</title>
 </head>
@@ -18,18 +21,16 @@
         <nav class="mainHeader">
             <!-- Logo du site -->
             <!-- Menu de navigation-->
-            <div class="logo">
-                <img src="../ressources/images/logo/Reservia.svg" alt="Reservia" title="Reservia : Trouvez votre hébergement pour des vacances de rêve" />
-            </div>
+            <img class="logo" src="../ressources/images/logo/Reservia.svg" alt="Reservia" title="Reservia : Trouvez votre hébergement pour des vacances de rêve" />
             <!-- Ancre vers la partie hébergements -->
-            <nav class="headerNav">
+            <div class="headerNav">
                 <a class="accomodation" href="#hebergements">Hébergements</a>
                 <!-- Ancre vers la partie activités -->
                 <a class="activities" href="#activites">Activités</a>
                 <!-- Lien vers la partie inscription -->
                 <a class="register" href="/inscription.html">S'inscrire</a>
-            </nav>
             </div>
+        </nav>
     </header>
 
     <!-------- MAIN PAGE -------->
@@ -299,10 +300,75 @@
         <!-------- ACTIVITIES -------->
 
         <section id="activities">
+            <h3>Activités à Marseille</h3>
             <div class="activitiesBlock">
-                <div class="activtiesContainers">
-                    <h3>Activités à Marseille</h3>
+
+                <!-- CONTAINER 1 -->
+                <div class="activitiesContainers activitiesCtn1">
+                    <div class="activitiesPhotos">
+                        <img src="../ressources/images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" title="Photo du Vieux Port" alt="Photo du Vieux Port">
+                    </div>
+                    <div class="activitiesDescription">
+                        <p>Vieux Port</p>
+                    </div>
                 </div>
+                <!-- END CONTAINER 1 -->
+
+
+                <!-- CONTAINER 2 -->
+                <div class="activitiesContainers activitiesCtn2">
+                    <div class="activitiesPhotos">
+                        <img src="../ressources/images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg" title="Photo du Vieux Port" alt="Photo du Vieux Port">
+                    </div>
+                    <div class="activitiesDescription">
+                        <p>Fort de Pomègues</p>
+                    </div>
+                </div>
+                <!-- END CONTAINER 2 -->
+
+                <!-- CONTAINER 3 -->
+                <div class="activitiesContainers activitiesCtn3">
+                    <div class="activitiesPhotos">
+                        <img src="../ressources/images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" title="Photo du Vieux Port" alt="Photo du Vieux Port">
+                    </div>
+                    <div class="activitiesDescription">
+                        <p>Iles du Frioul</p>
+                    </div>
+                </div>
+                <!-- END CONTAINER 3 -->
+
+                <!-- CONTAINER 4 -->
+                <div class="activitiesContainers activitiesCtn4">
+                    <div class=" activitiesPhotos ">
+                        <img src="../ressources/images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg " title="Photo du Vieux Port " alt="Photo du Vieux Port ">
+                    </div>
+                    <div class="activitiesDescription ">
+                        <p>Parc National des Calanques</p>
+                    </div>
+                </div>
+                <!-- END CONTAINER 4 -->
+
+                <!-- CONTAINER 5 -->
+                <div class="activitiesContainers activitiesCtn5 ">
+                    <div class="activitiesPhotos ">
+                        <img src="../ressources/images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg " title="Photo du Vieux Port " alt="Photo du Vieux Port ">
+                    </div>
+                    <div class="activitiesDescription ">
+                        <p>Notre-Dame-de-La-Garde</p>
+                    </div>
+                </div>
+                <!-- END CONTAINER 5 -->
+
+                <!-- CONTAINER 6 -->
+                <div class="activitiesContainers activitiesCtn6 ">
+                    <div class="activitiesPhotos ">
+                        <img src="../ressources/images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg " title="Photo du Vieux Port " alt="Photo du Vieux Port ">
+                    </div>
+                    <div class="activitiesDescription ">
+                        <p>Parc Longchamp</p>
+                    </div>
+                </div>
+                <!-- END CONTAINER 6 -->
 
             </div>
         </section>
@@ -317,13 +383,13 @@
                 <h5>A propos</h5>
                 <ol>
                     <li>
-                        <a href="#0">Fonctionnement du site</a>
+                        <a href="#0 ">Fonctionnement du site</a>
                     </li>
                     <li>
-                        <a href="#0">Conditions générales de vente</a>
+                        <a href="#0 ">Conditions générales de vente</a>
                     </li>
                     <li>
-                        <a href="#0">Données et confclassentialité</a>
+                        <a href="#0 ">Données et confclassentialité</a>
                     </li>
                 </ol>
             </div>
@@ -331,10 +397,10 @@
                 <h5>Nos hébergements</h5>
                 <ol>
                     <li>
-                        <a href="#0">Charte qualité</a>
+                        <a href="#0 ">Charte qualité</a>
                     </li>
                     <li>
-                        <a href="#0">Soumettre votre hôtel</a>
+                        <a href="#0 ">Soumettre votre hôtel</a>
                     </li>
                 </ol>
             </div>
@@ -342,10 +408,10 @@
                 <h5>Assistance</h5>
                 <ol>
                     <li>
-                        <a href="#0">Centre d'aclasse</a>
+                        <a href="#0 ">Centre d'aide</a>
                     </li>
                     <li>
-                        <a href="#0">Nous contacter</a>
+                        <a href="#0 ">Nous contacter</a>
                     </li>
                 </ol>
             </div>
