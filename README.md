@@ -1,2 +1,1 @@
-# CharlyBIHEL_2_18122020
-Projet 2 du parcours Dev Front-End
+## Bienvenue sur le repo de mon projet 2 chez OpenClassrooms
