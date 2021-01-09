@@ -39,15 +39,18 @@ body {
     font-family: 'raleway';
     background-color: transparent;
     font-size: 1em;
+    max-width: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
-    padding-top: 10px;
-    align-self: center;
+    margin: 0;
+    padding: 0;
 }
 
 main {
+    max-width: 100%;
     margin-left: 20px;
     margin-right: 20px;
+    padding-bottom: 50px;
 }
 
 h3 {
@@ -58,12 +61,12 @@ li {
     list-style-type: none;
 }
 
-.fa {
-    color: #0065FC;
+form {
+    width: 100%;
 }
 
-.mainPage {
-    display: block;
+.fa {
+    color: #0065FC;
 }
 
 .searchSections {
@@ -71,7 +74,7 @@ li {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    padding-bottom: 50px;
 }
 
 .searchSections a,
@@ -81,10 +84,12 @@ footer a {
 }
 
 .searchSection1 {
+    height: 100%;
     width: 70%;
 }
 
 .searchSection2 {
+    height: 100%;
     width: 25%;
 }
 
@@ -160,8 +165,8 @@ nav a:active {
 .searchButton {
     display: flex;
     justify-content: left;
-    width: 100%;
-    max-width: 100%;
+    width: 50%;
+    max-width: 50%;
 }
 
 .searchField {
@@ -174,6 +179,7 @@ nav a:active {
     margin-left: 0px;
     text-align: left;
     height: 40px;
+    width: auto;
 }
 
 ::placeholder {
@@ -190,6 +196,7 @@ nav a:active {
     text-align: center;
     height: 40px;
     cursor: pointer;
+    width: auto;
 }
 
 .logoButton {
@@ -200,6 +207,7 @@ nav a:active {
     border-radius: 5px 0px 0px 5px;
     text-align: center;
     height: 40px;
+    width: auto;
 }
 
 i.fa.fa-map-marker {
@@ -220,6 +228,12 @@ i.fa.fa-map-marker {
     padding-bottom: 20px;
 }
 
+.filtersInfo p>i {
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    padding: 0px 100%;
+}
+
 
 /* -------- ACCOMODATIONS FOUND -------- */
 
@@ -230,6 +244,7 @@ i.fa.fa-map-marker {
     border-radius: 10px;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
     width: 100%;
 }
 
@@ -246,14 +261,17 @@ i.fa.fa-map-marker {
     height: 100%;
 }
 
-.accomodationsContainers {
+.accomodationsBlock>a {
+    width: 30%;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.accomodationsContainers {
     border: 4px solid transparent;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0px 5px 15px 5px grey;
-    width: 350px;
 }
 
 .accomodationsPhotos {}
@@ -294,8 +312,10 @@ i.fa.fa-map-marker {
 
 /* ------ MOST POPULARS ------ */
 
-.popularsSection {
+.populars {
     background-color: #F2F2F2;
+    height: 100%;
+    width: 100%;
     padding: 20px;
     border-radius: 10px;
     font-family: 'ralewayBold';
@@ -308,28 +328,37 @@ i.fa.fa-map-marker {
     margin-right: 20px;
 }
 
-.popularsSection h3 {
+.populars h3 {
     display: inline-block;
     padding-left: 20px;
+}
+
+.popularsBlock {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.popularsBlock>a {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .popularsContainers {
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 150px;
-    width: 100%;
-    background-color: white;
     border: 4px solid transparent;
-    box-shadow: 0px 5px 15px 5px grey;
     border-radius: 10px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0px 5px 15px 5px grey;
 }
 
 .popularsPhotos {
-    height: 100%;
-    width: 150px;
+    width: 50%;
+    height: 175px;
 }
 
 .popularsPhotos img {
@@ -339,7 +368,11 @@ i.fa.fa-map-marker {
     object-fit: cover;
 }
 
-.popularsDescription {}
+.popularsDescription {
+    width: 50%;
+    padding-left: 10px;
+    outline: none;
+}
 
 .popularsDescription p:nth-child(2) {
     font-family: 'raleway';
@@ -442,9 +475,7 @@ i.fa.fa-map-marker {
 
 footer {
     background-color: #f1f1f1;
-    width: auto;
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 100%;
     font-family: "ralewayLight";
     font-size: 1rem;
 }
@@ -459,13 +490,13 @@ footer h5 {
     flex-direction: row;
     width: 75%;
     justify-content: space-between;
-    margin: 20px;
     padding: 20px;
 }
 
 .footerLists {
     color: black;
     padding-left: 0px;
+    margin: 20px;
 }
 
 .footerLists ol {

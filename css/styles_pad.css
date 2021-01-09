@@ -115,10 +115,30 @@ nav a:active {
     padding-left: 30px;
 }
 
+.searchField {
+    height: 60px;
+    width: 40%;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 1.3em;
+}
+
+.pressButton {
+    height: 60px;
+    width: 20%;
+}
+
+.logoButton {
+    height: 60px;
+    font-size: 25px;
+    width: 10%;
+}
+
 
 /* ------ MOST POPULARS ------ */
-
-.popularsSection {}
 
 .popularsBlock {
     width: 100%;
@@ -144,23 +164,32 @@ nav a:active {
 }
 
 .popularsContainers img {
-    width: 250px;
+    width: 100%;
     height: 100%;
 }
 
 
 /* -------- ACCOMODATIONS FOUND -------- */
 
+.accomodationsBlock {
+    flex-direction: column;
+    align-content: center;
+}
+
+.accomodationsBlock>a {
+    width: 90%;
+}
+
 .accomodationsWeFound h3 {
     margin-left: 40px;
 }
 
 .accomodationsContainers {
-    width: 580px;
+    width: 100%;
 }
 
 .accomodationsContainers img {
-    width: 580px;
+    width: 100%;
     height: 230px;
 }
 
@@ -176,6 +205,7 @@ nav a:active {
 
 #activities>h3 {
     font-family: "ralewayBold";
+    padding-left: 60px;
 }
 
 .activitiesBlock {
@@ -186,13 +216,11 @@ nav a:active {
 }
 
 .activitiesContainers {
-    width: 580px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    width: 90%;
 }
 
 .activitiesContainers img {
-    width: 580px;
+    width: 100%;
     height: 230px;
 }
 
