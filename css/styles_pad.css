@@ -118,8 +118,11 @@ nav a:active {
 
 /* ------ MOST POPULARS ------ */
 
+.popularsSection {}
+
 .popularsBlock {
     width: 100%;
+    display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
@@ -130,14 +133,19 @@ nav a:active {
 }
 
 .popularsContainers {
-    width: 580px;
+    height: 225px;
+    width: 100%;
     flex-wrap: wrap;
     align-items: center;
 }
 
+.popularsPhotos {
+    height: 100%;
+}
+
 .popularsContainers img {
     width: 250px;
-    height: 200px;
+    height: 100%;
 }
 
 
