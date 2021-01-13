@@ -1,19 +1,263 @@
 /* -------- GENERAL -------- */
 
 body {
-    top: 0;
-    bottom: 0;
-    font-family: 'raleway';
-    background-color: green;
-    width: auto;
-    font-size: 1em;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    padding-top: 10px;
+    width: 100%;
+    margin: 0%;
+    padding: 0%;
+    font-size: 0.8em;
 }
 
-main {
-    margin-left: 20px;
+.mainPage {
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.searchSections {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-self: center;
+}
+
+.searchSection1 {
+    width: 100%;
+    order: 2;
+}
+
+.searchSection2 {
+    width: 100%;
+    order: 1;
+    padding-bottom: 50px;
+}
+
+
+/* -------- HEADER -------- */
+
+.headerNav {
+    position: inherit;
+    top: 0;
+    display: grid;
+    grid-template-columns: 50% 50% 50% 50%;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    font-size: 1em;
+}
+
+.logo {
+    justify-self: left;
+    padding-top: 20px;
+    padding-left: 45px;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.headerNav a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 0px;
+    border-top: 0px;
+    border-top: none;
+}
+
+nav a:hover,
+nav a:active {
+    border-top: none;
+}
+
+.accomodation {
+    grid-column: 1;
+}
+
+.activities {
+    color: black;
+    grid-column: 2;
+    border-color: grey;
+}
+
+.accomodation,
+.activities {
+    grid-row: 2;
+    text-align: center;
+    width: 100%;
+    border-bottom: 4px solid;
+    padding-top: 45px;
+    padding-bottom: 15px;
+    font-size: 1.6em;
+}
+
+.register {
+    color: #0065FC;
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: right;
+    padding-right: 45px;
+}
+
+.headerDescription {
+    padding-left: 35px;
+    padding-top: 0px;
+}
+
+
+/* -------- SEARCH BUTTON -------- */
+
+.searchButton {
+    justify-content: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.searchButton>* {
+    height: auto;
+}
+
+.filters {
+    padding-left: 30px;
+}
+
+.searchField {
+    height: 50px;
+    width: 50%;
+}
+
+::placeholder {
+    color: black;
+    opacity: 1;
+    font-size: 1.2em;
+}
+
+.pressButton {
+    height: 50px;
+    width: 20%;
+}
+
+.logoButton {
+    height: 50px;
+    font-size: 25px;
+    width: 10%;
+}
+
+.filtersInfo p>i {
+    font-size: 1.2em;
+}
+
+
+/* ------ MOST POPULARS ------ */
+
+.populars {
+    padding-bottom: 0px;
+}
+
+.popularsBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.popularsBlock>a {
+    height: 200px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.popularsTitle {
     margin-right: 20px;
-    z-index: 2;
+    margin-left: 00px;
+    padding-bottom: 20px;
+}
+
+.popularsContainers {
+    height: 70%;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.popularsPhotos {
+    height: 100%;
+    width: 50%;
+}
+
+.popularsContainers img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* -------- ACCOMODATIONS FOUND -------- */
+
+.accomodationsBlock {
+    flex-direction: column;
+    align-content: center;
+}
+
+.accomodationsBlock>a {
+    width: 90%;
+}
+
+.accomodationsWeFound h3 {
+    margin-left: 0px;
+}
+
+.accomodationsContainers {
+    width: 100%;
+}
+
+.accomodationsContainers img {
+    width: 100%;
+    height: 130px;
+}
+
+
+/* ------ ACTIVITIES ------ */
+
+#activities {
+    background-color: #F2F2F2;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    width: 90%;
+    align-self: center;
+}
+
+#activities>h3 {
+    font-family: "ralewayBold";
+    padding-left: 20px;
+}
+
+.activitiesBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0;
+    height: 100%;
+}
+
+.activitiesBlock>a {
+    width: 90%;
+}
+
+.activitiesPhotos img {
+    height: 180px;
+    width: 100%;
+}
+
+
+/* -------- FOOTER -------- */
+
+.footerContainers {
+    flex-direction: column;
+    width: 100%;
+}
+
+.footerContainers li {
+    padding-bottom: 10px;
 }
