@@ -2,8 +2,6 @@
 
 body {
     width: 100%;
-    margin: 0%;
-    padding: 0%;
     font-size: 0.8em;
 }
 
@@ -17,9 +15,9 @@ body {
 }
 
 .searchSections {
-    display: flex;
     flex-direction: column;
     width: 90%;
+    height: 100%;
     align-self: center;
 }
 
@@ -39,29 +37,24 @@ body {
 
 .headerNav {
     position: inherit;
-    top: 0;
-    display: grid;
     grid-template-columns: 50% 50% 50% 50%;
-    width: 100%;
     height: auto;
-    background-color: white;
-    font-size: 1em;
 }
 
 .logo {
-    justify-self: left;
     padding-top: 20px;
     padding-left: 45px;
-    grid-column: 1;
     grid-row: 1;
 }
 
 .headerNav a {
-    text-decoration: none;
-    cursor: pointer;
-    margin-top: 0px;
-    border-top: 0px;
     border-top: none;
+    font-size: inherit;
+}
+
+.headerNav :nth-child(2),
+.headerNav :nth-child(3) {
+    font-size: 1.6em;
 }
 
 nav a:hover,
@@ -71,12 +64,14 @@ nav a:active {
 
 .accomodation {
     grid-column: 1;
+    font-size: 2em;
+    border-bottom: 3px solid #0065FC;
 }
 
 .activities {
     color: black;
     grid-column: 2;
-    border-color: grey;
+    border-bottom: 3px solid #F2F2F2;
 }
 
 .accomodation,
@@ -84,18 +79,16 @@ nav a:active {
     grid-row: 2;
     text-align: center;
     width: 100%;
-    border-bottom: 4px solid;
     padding-top: 45px;
     padding-bottom: 15px;
-    font-size: 1.6em;
 }
 
 .register {
-    color: #0065FC;
     grid-column: 2;
     grid-row: 1;
     justify-self: right;
     padding-right: 45px;
+    font-size: 1em;
 }
 
 .headerDescription {
@@ -120,6 +113,10 @@ nav a:active {
     padding-left: 30px;
 }
 
+.filtersList {
+    display: inherit;
+}
+
 .searchField {
     height: 50px;
     width: 50%;
@@ -136,14 +133,68 @@ nav a:active {
     width: 20%;
 }
 
+.pressButton span {
+    font-size: 0;
+}
+
+i.fa.fa-search {
+    display: inline;
+    color: white;
+    font-size: 1.2em;
+}
+
 .logoButton {
     height: 50px;
     font-size: 25px;
     width: 10%;
+    padding-top: 6px;
 }
 
 .filtersInfo p>i {
     font-size: 1.2em;
+}
+
+.filtersInfo>p {
+    margin-top: 25px;
+    margin-right: 30px;
+    padding-bottom: 10px;
+}
+
+.myBtnContainer {
+    display: grid;
+    justify-content: left;
+    grid-row-gap: 7px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.myButton {
+    border-radius: 5px 5px 5px px;
+}
+
+.btn {
+    margin-left: 27px;
+    padding: 10px 16px;
+}
+
+.eco {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.fam {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.rom {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.ani {
+    grid-column: 1;
+    grid-row: 3;
 }
 
 
@@ -154,16 +205,11 @@ nav a:active {
 }
 
 .popularsBlock {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
 }
 
 .popularsBlock>a {
     height: 200px;
-    width: 100%;
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -178,7 +224,6 @@ nav a:active {
     height: 70%;
     width: 100%;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .popularsPhotos {
@@ -203,6 +248,10 @@ nav a:active {
     width: 90%;
 }
 
+.accomodationsWeFound {
+    background-color: white;
+}
+
 .accomodationsWeFound h3 {
     margin-left: 0px;
 }
@@ -219,16 +268,12 @@ nav a:active {
 
 /* ------ ACTIVITIES ------ */
 
-#activities {
-    background-color: #F2F2F2;
-    padding: 20px;
-    border-radius: 10px;
-    font-size: 0.8rem;
+.activitiesSection {
     width: 90%;
     align-self: center;
 }
 
-#activities>h3 {
+.activitiesSection>h3 {
     font-family: "ralewayBold";
     padding-left: 20px;
 }
@@ -242,7 +287,7 @@ nav a:active {
 }
 
 .activitiesBlock>a {
-    width: 90%;
+    width: 100%;
 }
 
 .activitiesPhotos img {
