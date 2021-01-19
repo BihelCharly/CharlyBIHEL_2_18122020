@@ -17,6 +17,10 @@ body {
     height: auto;
 }
 
+.searchField {
+    text-indent: 10px;
+}
+
 .searchSections {
     flex-direction: column;
     width: 95%;
@@ -174,6 +178,14 @@ i.fa.fa-search {
     margin-left: 10px;
 }
 
+.myBtnContainer>span {
+    padding-right: 0px;
+}
+
+.myBtnContainer .btn {
+    padding-right: 10px;
+}
+
 .myButton {
     border-radius: 5px 5px 5px 5px;
 }
@@ -193,6 +205,11 @@ i.fa.fa-search {
 
 .popularsBlock {
     flex-wrap: wrap;
+}
+
+.popularsBlock a {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .popularsTitle {
@@ -252,8 +269,7 @@ i.fa.fa-search {
     align-self: center;
 }
 
-.activitiesSection>h3 {
-    font-family: "ralewayBold";
+.activitiesSection>h2 {
     padding-left: 20px;
 }
 

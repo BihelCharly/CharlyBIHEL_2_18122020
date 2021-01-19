@@ -93,8 +93,9 @@ nav a:active {
 }
 
 .headerDescription {
-    padding-left: 35px;
+    padding-left: 20px;
     padding-top: 0px;
+    width: 95%;
 }
 
 
@@ -111,7 +112,8 @@ nav a:active {
 }
 
 .filters {
-    padding-left: 30px;
+    width: 100%;
+    padding-left: 20px;
 }
 
 .filtersList {
@@ -121,6 +123,7 @@ nav a:active {
 .searchField {
     height: 50px;
     width: 50%;
+    text-indent: 5px;
 }
 
 ::placeholder {
@@ -167,6 +170,10 @@ i.fa.fa-search {
     grid-row-gap: 7px;
     margin-top: 20px;
     margin-left: 0px;
+}
+
+.myBtnContainer span {
+    padding-right: 0px;
 }
 
 .myButton {
@@ -224,6 +231,7 @@ i.fa.fa-search {
 
 .ani .btn {
     padding-left: 20px;
+    padding-right: 18px;
 }
 
 .ani .circle-icon {
@@ -241,8 +249,7 @@ i.fa.fa-search {
     flex-wrap: wrap;
 }
 
-.popularsBlock>a {
-    height: 200px;
+.popularsBlock a {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -259,24 +266,17 @@ i.fa.fa-search {
     flex-wrap: wrap;
 }
 
-.popularsPhotos {
-    height: 100%;
-    width: 35%;
-}
-
 .popularsDescritpion {
     width: 60%;
 }
 
-.popularsContainers img {
-    width: 100%;
-    height: 100%;
+.starsPop1,
+.starsPop3 {
+    padding-top: 25px;
 }
 
-.starsPop1,
-.starsPop2,
-.starsPop3 {
-    padding-top: 20px;
+.starsPop2 {
+    padding-top: 10px;
 }
 
 
@@ -326,8 +326,7 @@ i.fa.fa-search {
     align-self: center;
 }
 
-.activitiesSection>h3 {
-    font-family: "ralewayBold";
+.activitiesSection>h2 {
     padding-left: 20px;
 }
 
