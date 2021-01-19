@@ -17,9 +17,13 @@ body {
     height: auto;
 }
 
+.searchField {
+    text-indent: 10px;
+}
+
 .searchSections {
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: 100%;
     align-self: center;
 }
@@ -109,15 +113,11 @@ nav a:active {
 
 .searchField {
     height: 60px;
+    width: 40%;
 }
 
 ::placeholder {
     font-size: 1.3em;
-}
-
-.btn {
-    padding: 14px 20px;
-    margin-left: 32px;
 }
 
 .pressButton {
@@ -127,6 +127,38 @@ nav a:active {
 
 .pressButton span {
     font-size: 0;
+}
+
+.eco .btn {
+    padding-left: 24px;
+}
+
+.eco .circle-icon {
+    padding: 15px;
+}
+
+.fam .btn {
+    padding-left: 21px;
+}
+
+.fam .circle-icon {
+    padding: 15px 18px 15px 18px;
+}
+
+.rom .btn {
+    padding-left: 20px;
+}
+
+.rom .circle-icon {
+    padding: 15px;
+}
+
+.ani .btn {
+    padding-left: 22px;
+}
+
+.ani .circle-icon {
+    padding: 15px;
 }
 
 i.fa.fa-search {
@@ -143,7 +175,15 @@ i.fa.fa-search {
 }
 
 .myBtnContainer {
-    margin-left: 15px;
+    margin-left: 10px;
+}
+
+.myBtnContainer>span {
+    padding-right: 0px;
+}
+
+.myBtnContainer .btn {
+    padding-right: 10px;
 }
 
 .myButton {
@@ -155,11 +195,21 @@ i.fa.fa-search {
     margin-right: 30px;
 }
 
+.btn {
+    padding-top: 14px;
+    padding-bottom: 14px;
+}
+
 
 /* ------ MOST POPULARS ------ */
 
 .popularsBlock {
     flex-wrap: wrap;
+}
+
+.popularsBlock a {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 .popularsTitle {
@@ -188,7 +238,7 @@ i.fa.fa-search {
 }
 
 .accomodationsBlock>a {
-    width: 90%;
+    width: 100%;
 }
 
 .accomodationsWeFound {
@@ -196,7 +246,7 @@ i.fa.fa-search {
 }
 
 .accomodationsWeFound h3 {
-    margin-left: 40px;
+    padding-left: 5px;
 }
 
 .accomodationsContainers {
@@ -207,17 +257,20 @@ i.fa.fa-search {
     height: 230px;
 }
 
+.seeMore {
+    padding-left: 0px;
+}
+
 
 /* ------ ACTIVITIES ------ */
 
 .activitiesSection {
-    width: 90%;
+    width: 100%;
     align-self: center;
 }
 
-.activitiesSection>h3 {
-    font-family: "ralewayBold";
-    padding-left: 60px;
+.activitiesSection>h2 {
+    padding-left: 20px;
 }
 
 .activitiesBlock {
@@ -238,6 +291,10 @@ i.fa.fa-search {
     width: 100%;
 }
 
+.activitiesBlock>a:nth-child(3) {
+    margin-top: 0px;
+}
+
 
 /* -------- FOOTER -------- */
 
@@ -248,4 +305,9 @@ i.fa.fa-search {
 
 .footerContainers li {
     padding-bottom: 10px;
+}
+
+.footerLists {
+    margin: 0;
+    margin-left: 20px;
 }
