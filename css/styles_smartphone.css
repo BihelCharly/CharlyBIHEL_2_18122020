@@ -16,9 +16,10 @@ body {
 
 .searchSections {
     flex-direction: column;
-    width: 90%;
+    width: 95%;
     height: 100%;
     align-self: center;
+    padding-bottom: 0px;
 }
 
 .searchSection1 {
@@ -29,7 +30,7 @@ body {
 .searchSection2 {
     width: 100%;
     order: 1;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
 }
 
 
@@ -169,7 +170,7 @@ i.fa.fa-search {
 }
 
 .myButton {
-    border-radius: 5px 5px 5px px;
+    border-radius: 5px;
 }
 
 .btn {
@@ -195,6 +196,38 @@ i.fa.fa-search {
 .ani {
     grid-column: 1;
     grid-row: 3;
+}
+
+.eco .btn {
+    padding-left: 20px;
+}
+
+.eco .circle-icon {
+    padding: 15px;
+}
+
+.fam .btn {
+    padding-left: 21px;
+}
+
+.fam .circle-icon {
+    padding: 15px 17px 15px 17px;
+}
+
+.rom .btn {
+    padding-left: 20px;
+}
+
+.rom .circle-icon {
+    padding: 15px 17px 15px 17px;
+}
+
+.ani .btn {
+    padding-left: 20px;
+}
+
+.ani .circle-icon {
+    padding: 15px 16px 15px 16px;
 }
 
 
@@ -228,12 +261,22 @@ i.fa.fa-search {
 
 .popularsPhotos {
     height: 100%;
-    width: 50%;
+    width: 35%;
+}
+
+.popularsDescritpion {
+    width: 60%;
 }
 
 .popularsContainers img {
     width: 100%;
     height: 100%;
+}
+
+.starsPop1,
+.starsPop2,
+.starsPop3 {
+    padding-top: 20px;
 }
 
 
@@ -245,7 +288,7 @@ i.fa.fa-search {
 }
 
 .accomodationsBlock>a {
-    width: 90%;
+    width: 100%;
 }
 
 .accomodationsWeFound {
@@ -253,7 +296,7 @@ i.fa.fa-search {
 }
 
 .accomodationsWeFound h3 {
-    margin-left: 0px;
+    padding-left: 0px;
 }
 
 .accomodationsContainers {
@@ -262,14 +305,24 @@ i.fa.fa-search {
 
 .accomodationsContainers img {
     width: 100%;
-    height: 130px;
+    height: 100px;
+}
+
+.accomodationDescription {
+    padding-left: 10px;
+    padding-bottom: 0px;
+}
+
+.seeMore {
+    margin-top: 5px;
+    padding-left: 0px;
 }
 
 
 /* ------ ACTIVITIES ------ */
 
 .activitiesSection {
-    width: 90%;
+    width: 100%;
     align-self: center;
 }
 
@@ -291,8 +344,12 @@ i.fa.fa-search {
 }
 
 .activitiesPhotos img {
-    height: 180px;
+    height: 100px;
     width: 100%;
+}
+
+.activitiesBlock>a:nth-child(3) {
+    margin-top: 0px;
 }
 
 
@@ -305,4 +362,9 @@ i.fa.fa-search {
 
 .footerContainers li {
     padding-bottom: 10px;
+}
+
+.footerLists {
+    margin: 0;
+    margin-left: 20px;
 }
