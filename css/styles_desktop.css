@@ -246,7 +246,7 @@ i.fa.fa-map-marker {
 
 .filtersList {
     display: inline-flex;
-    align-items: center;
+    padding-bottom: 10px;
 }
 
 .filtersInfo {
@@ -319,10 +319,6 @@ i.fas.fa-dog {
     border-radius: 0px 20px 20px 0px;
     margin-left: 30px;
     font-family: 'ralewayBold';
-}
-
-.myBtnContainer {
-    margin-left: 30px;
 }
 
 .myBtnContainer span {
@@ -484,8 +480,12 @@ i.fa.fa-line-chart {
 
 .popularsDescription {
     width: 65%;
-    padding-left: 15px;
+    height: 90%;
+    padding-left: 10px;
     outline: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .popularsDescription p:nth-child(2) {
@@ -495,15 +495,6 @@ i.fa.fa-line-chart {
 .starsPop2 i:nth-child(5),
 .starsPop3 i:nth-child(5) {
     color: grey;
-}
-
-.starsPop1,
-.starsPop3 {
-    padding-top: 45px;
-}
-
-.starsPop2 {
-    padding-top: 30px;
 }
 
 
